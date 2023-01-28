@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@chainlink/ethers-ccip-read-provider": "^0.2.3",
+    "@types/node": "^18.11.18",
+    "ethers": "^5.7.2",
+    "typescript": "^4.9.4"
+  }
+}

@@ -12,7 +12,7 @@ const wallet = new ethers.Wallet("0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e
 const account = wallet.connect(provider);
 
 const server = http.createServer(async (req, res) => {
-  if (req.url == undefined) return;
+  if (req.url == undefined) throw "Appease the great over-lord: the type checker";
   const parsedUrl = url.parse(req.url, true);
   const sender = parsedUrl.query["sender"];
   const data = parsedUrl.query["data"];

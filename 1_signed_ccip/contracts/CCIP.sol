@@ -69,7 +69,6 @@ contract PointlessCCIP {
 
         address signer = ecrecover(ethSignedMessageHash, v, r, s);
 
-        // don't do this without a prefix xx
         require(signer == address(0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199), "invalid signature");
         // require(signer == msg.sender, "invalid signature");
         // There is a bug in ethers.js CCIP-read implementation where the

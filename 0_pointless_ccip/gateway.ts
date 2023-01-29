@@ -4,7 +4,6 @@ import url from 'url';
 const port = 7331;
 const host = '127.0.0.1';
 
-
 const server = http.createServer((req, res) => {
   if (req.url == undefined) return;
   const parsedUrl = url.parse(req.url, true);
